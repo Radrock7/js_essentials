@@ -24,7 +24,7 @@ function displayTasks() {
 }
 
 function toggleTask(index) {
-    tasks[index].completed = !tasks[index].completed;
+    tasks[index].completed = !tasks[index].completed; // task.completed is undefined for unchecked tasks
     displayTasks();
 }
 
